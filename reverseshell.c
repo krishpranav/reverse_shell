@@ -8,7 +8,7 @@
 int main(void) {
 
     int sockt;
-    int port = 4444;
+    int port = 4444; #you can define any port 
     struct sockaddr_in_revsockaddr;
 
     sockt = socket(AF_INET, SOCK_STREAM)
